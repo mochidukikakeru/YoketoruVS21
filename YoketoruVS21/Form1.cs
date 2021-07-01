@@ -12,6 +12,14 @@ namespace YoketoruVS21
 {
     public partial class Form1 : Form
     {
+        enum State
+        {
+            None=-1,    //無効
+            Title,      //タイトル
+            Game,       //ゲーム画面
+            Gameover,   //ゲームオーバー
+            Clear,      //クリア
+        }
         public Form1()
         {
             InitializeComponent();
